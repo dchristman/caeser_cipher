@@ -22,7 +22,7 @@ letters.each do |letter|
     letter = letter.downcase
     position = alphabet.index(letter)
     position += key
-    position -+ 26 if position > 25
+    position -= 26 if position > 25
     letter = alphabet[position]
     letter = letter.upcase if letter_is_uppercase
   end
